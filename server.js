@@ -9,15 +9,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/profile', function (req, res) {
+app.get('/:profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ui/profile.html'));
 });
 
-app.get('/about', function (req, res) {
+app.get('/:about', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ui/about.html'));
 });
 
-app.get('/', function (req, res) {
+app.get('/:google', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/google.jpg'));
+});
+
+app.get('/:ebay', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ui/ebay.png'));
 });
 
