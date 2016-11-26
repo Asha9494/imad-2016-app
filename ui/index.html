@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Profile</title>
+<title>About</title>
 <link rel="icon" type="image/gif" href="link.jpg"/>
 
 <style>
@@ -25,10 +25,6 @@ p
 	padding-top:0px;
 		
 }
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
 
 header, footer {
     padding: 1em;
@@ -40,193 +36,84 @@ header, footer {
 	font-family:"comic Sans MS";
 }
 
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
+<!--
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
-	ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+.style2 {
+	font-size: 16px;
+	color: #EC2F13;
 }
 
-
-ul.tab li {float: left;}
-
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+.style3 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 16px;
 }
 
-ul.tab li a:hover {
-    background-color: #ddd;
+.style4 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: capitalize;
+	text-color: red;
+	font-weight: bold;
 }
-
-ul.tab li a:focus, .active {
-    background-color: #ccc;
+.style5 {	font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: capitalize;
+	text-color: red;
+	font-weight: bold;
 }
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+.style6 {font-family: Georgia, "Times New Roman", Times, serif;
+	text-transform: capitalize;
+	text-color: red;
+	font-weight: bold;
 }
-
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+-->
 </style>
-<script>
-function opencont(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-	}
-
-</script>
 </head>
+
 <body>
 
-<div class="container">
-
 <header>
-   <h1>PROFILE</h1>
-   <h2>S.Asha</h2>
-   <p>&nbsp;</p>
+	<h1 align="center" class="style4"  style="text-align: center">ACCESS TO MY SITES </h1>
 </header>
+<table width="1101" border="0" color="red">
+  <tr>
+    <td width="863" height="23"><div align="center" class="style1">
+      <h3 align="right" class="style2"><a href="about.html">About</a></h3>
+    </div></td>
+    <td width="152"><div align="center" class="style3">
+      <h3 align="right"><a href="profile.html">Profile</a></h3>
+    </div></td>
 
-<div>
-	<a href="MySite.html"> Back To Home Page</a></br>
-</div>
-  
-<ul class="tab">
-  <li><a href="javascript:void(0)" class="tablinks" onClick="opencont(event, 'Personal Details')">Personal Details</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onClick="opencont(event, 'Education')">Academics</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onClick="opencont(event, 'Skills')">Technical Skills</a></li>
-  <li><a href="javascript:void(0)" class="tablinks" onClick="opencont(event, 'Project')">Project</a></li>
-</ul>
-<div id="Personal Details" class="tabcontent">
-  <h2>PERSONAL DETAILS</h2>
-  <strong> <pre>
- <p>
-
-	Name			:	S.Asha
-	
-	Contact No		:	9597279814
-	
-	E-mail			:	ashasekar855@yahoo.com
-	
-	Address			:	No.11/112 'O' Block MMDA Colony,
-						Arumbakkam, Chennai - 600106.
-
-	Birth Date		: 	09 Apr 1994
-					
-	Sex				:	Female
-	
-	Languages Known	:   	English, Tamil
-	
-</div>
-
-<div id="Education" class="tabcontent">
-  <h3>ACADEMICS</h3>
-  <strong><pre><p>
-	 
-<table border="0" width="400" height="200">
-	<tr><b>
-		<td ><div align="center" > EXAMINATION </div> </td>
-		<td ><div align="center" > PERCENTAGE </div> </td>
-		<td ><div align="center" > SCHOOL/UNIVERSITY </div> </td>
-		<td ><div align="center" > YEAR </div> </td></b>
-	</tr><br>
-	<tr>
-		<td ><div align="center" > MCA </div> </td>
-		<td ><div align="center" > 9.25(Current CGPA) </div> </td>
-		<td ><div align="center" > Anna University (CEG) </div> </td>
-		<td ><div align="center" > 2018 </div> </td>
-	</tr>
-	<tr>
-		<td ><div align="center" > BCA </div> </td>
-		<td ><div align="center" > 78.00% </div> </td>
-		<td ><div align="center" > Madras University (Valliammal College) </div> </td>
-		<td ><div align="center" > 2014 </div> </td>
-	</tr>
-	<tr>
-		<td ><div align="center" > HSC </div> </td>
-		<td ><div align="center" > 87.30% </div> </td>
-		<td ><div align="center" > Sharada Vidyalaya Girls School </div> </td>
-		<td ><div align="center" > 2011 </div> </td>
-	</tr>
-	<tr>
-		<td ><div align="center" > SSC </div> </td>
-		<td ><div align="center" > 82.20% </div> </td>
-		<td ><div align="center" > Moongibai Goenka Girls School </div> </td>
-		<td ><div align="center" > 2009 </div> </td>
-	</tr>
+  </tr>
 </table>
-  </p></pre></strong>
-</div>
-
-<div id="Skills" class="tabcontent">
-  <h3>TECHNICAL SKILLS</h3>
-  <strong><pre><p>
-	
-	PROGRAMMING LANGUAGES		:	C, C++, Java
-	
-	OPERATING SYSTEMS				:	Windows XP, Windows 7, Windows 8, Windows 8.1, Windows 10
-	
-	DATABASES						:	MY-SQL, Oracle, MS-Access
-
-  </p></pre></strong>
-</div>
-<div id="Project" class="tabcontent">
-  <h3>ACADEMIC PROJECTS</h3>
-  <strong><p>
-  
-Blood Bank Management System<br><br>
-  			
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				This system is designed for private blood bank.  It includes blood donate  enquiry, donor details, stock details and hospital details. In this system various kind of reports are automatically generated. As a designer I needed to design the table structure to store the all the details of the  donors and their details and also the details of blood stock available.<br><br>
-				
-Vehicle Accident Alert System(MCA)<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		This is system is basically designed for two wheeler vehicles to alert if accident occurs. Proposed sytem detects the accident and alerts the nearby hospital to provide immeditate help to victim. This system also includes the victim can do manual off for the alert raised in the vehicle. As this system is basically an embedded system based I have just 			           implemented the coding part about how the system works. As a developer, I need to monitor for accident and send the victim location details to hospital and rescue team.<br><br>
-				
-  </p></strong>
-
-
-
-
+<hr />
+<p>&nbsp;</p>
+<table width="1086" height="724" border="0" align="center">
+  <tr>
+    <td width="186" height="122"><span class="style6" style="text-align: center"><a href="http://www.google.com"><img src="google.jpg" width="150" height="75" border="0" /></a></span></td>
+    <td width="180"> <a href="http://www.gmail.com"><img src="gmail.jpg" width="120" height="75" border="0" /></a></td>
+    <td width="173"><a href="http://www.rediffmail.com"><img src="rediff.jpeg" width="150" height="150" border="0" /></a></td>
+    <td width="213"><a href="http://www.yahoo.com"><img src="yahoo.png" width="125" height="150" border="0" /></a></td>
+    <td width="259"><a href="http://www.linkedin.in"><img src="linkedin.png" width="180" height="100" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td height="142"><a href="http://www.facebook.com"><img src="facebook.png" width="125" height="125" border="0" /></a></td>
+    <td><a href="http://www.twitter.com"><img src="twitter.jpg" width="180" height="130" border="0" /></a></td>
+    <td><a href="http://www.youtube.com"><img src="youtube.jpg" width="100" height="150" border="0" /></a></td>
+    <td><a href="http://www.hotstar.com"><img src="hotstar.jpg" width="175" height="150" /></a></td>
+    <td><blockquote><a href="http://www.naukri.com"><img src="naukri.png" width="200" height="150" border="0" /></a></blockquote></td>
+  </tr>
+  <tr>
+    <td height="168"><a href="http://www.ebay.com"><img src="ebay.png" width="150" height="100" border="0" /></a></td>
+    <td><a href="http://www.amazon.com"><img src="amazon.png" width="150" height="130" border="0" /></a></td>
+    <td><a href="http://www.instagram.com"><img src="instagram.png" width="175" height="120" border="0" /></a></td>
+    <td><a href="http://www.shopclues.com"><img src="shopclues.png" width="200" border="0" /></a></td>
+    <td><a href="http://www.torrent.com"><img src="torrent.png" width="250" height="200" border="0" /></a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
 <footer>
-<pre><div id="phoneno" style="text-align:left"></div><div id="email" style="text-align:right"><br />Email: ashasekar855@yahoo.com</div></pre>
 </footer>
-
-</div>
-
 </body>
 </html>
-
