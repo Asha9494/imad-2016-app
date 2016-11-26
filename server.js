@@ -9,11 +9,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:profile', function (req, res) {
+app.get('/profile', function (req, res) {
   res.send('Welcome to profile page');
 });
 
-app.get('/:about', function (req, res) {
+app.get('/help', function (req, res) {
   res.send('Welcome to help page');
 });
 
