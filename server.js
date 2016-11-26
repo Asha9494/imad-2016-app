@@ -18,7 +18,7 @@ app.get('/about', function (req, res) {
 });
 
 app.get('/google', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'google.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'ui/google.jpg'));
 });
 
 app.get('/ui/style.css', function (req, res) {
