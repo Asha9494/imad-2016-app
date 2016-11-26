@@ -21,6 +21,19 @@ app.get('/google', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ui/google.jpg'));
 });
 
+app.get('/amazon', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/amazon.png'));
+});
+
+app.get('/ebay', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/ebay.png'));
+});
+
+app.get('/gmail', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/gmail.jpg'));
+});
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
