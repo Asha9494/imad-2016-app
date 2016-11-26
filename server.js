@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:profile', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+  res.send('Welcome to profile page');
 });
 
 app.get('/:about', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+  res.send('Welcome to help page');
 });
 
 app.get('/ui/style.css', function (req, res) {
