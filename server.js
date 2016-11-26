@@ -17,6 +17,10 @@ app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ui/about.html'));
 });
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/ebay.png'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
