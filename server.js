@@ -13,7 +13,7 @@ app.get('/profile', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
-app.get('/help', function (req, res) {
+app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
 
