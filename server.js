@@ -10,11 +10,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/profile', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'ui/profile.html'));
 });
 
 app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'ui/about.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
