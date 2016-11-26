@@ -14,7 +14,7 @@ app.get('/profile', function (req, res) {
 });
 
 app.get('/help', function (req, res) {
-  res.send('Welcome to help page');
+  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
